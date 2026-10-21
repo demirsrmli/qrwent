@@ -1,4 +1,7 @@
-const {chromium}=require('playwright');
+const {createRequire}=require('node:module');
+// Dependencies are installed in web/, while this test lives in tests/.
+const requireWeb=createRequire(require('node:path').join(__dirname,'../web/package.json'));
+const {chromium}=requireWeb('playwright');
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict'),crypto=require('crypto');
 (async()=>{
  const root=path.resolve(__dirname,'..'),out=path.resolve(root,'qa');fs.mkdirSync(out,{recursive:true});
