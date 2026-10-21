@@ -1,0 +1,25 @@
+{
+  "name": "qrwent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test:protocol": "node ../tests/vectors.mjs",
+    "test:browser:install": "playwright install chromium",
+    "test:browser": "node ../tests/browser.cjs"
+  },
+  "dependencies": {
+    "@noble/hashes": "1.8.0",
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.11",
+    "playwright": "1.61.1"
+  },
+  "description": "Offline file transfers through animated QR codes",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  }
+}
