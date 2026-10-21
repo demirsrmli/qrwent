@@ -1,0 +1,37 @@
+# Local dependencies and generated outputs
+**/node_modules/
+.gradle/
+**/.gradle/
+**/build/
+**/build-local/
+qa/
+.deps/
+*.class
+*.apk
+*.aab
+*.apks
+*.idsig
+# Signing material, credentials and machine-specific configuration
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+key.properties
+keystore.properties
+local.properties
+.env
+.env.*
+!.env.example
+*.log
+# Editor and operating-system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+# Generated test fixtures
+/tests/vectors.json
